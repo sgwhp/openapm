@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="openapm-agent:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/openapm_agent_jar</output-path>
+    <root id="archive" name="openapm-agent.jar">
+      <element id="module-output" name="openapm-agent" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/config.properties" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/asm-5.0.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/asm-commons-5.0.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

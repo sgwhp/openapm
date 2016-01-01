@@ -1,0 +1,53 @@
+[openamp.d] Agent running in pid 8244 arguments: null
+[openamp.d] transforming java/lang/ProcessBuilder
+[openamp.d] transforming java/lang/ProcessBuilder
+[openamp.d] transforming java/lang/ProcessBuilder
+[openamp.d] transforming com/android/dx/command/dexer/Main
+[openamp.d] invoke transform: android/support/design/R$anim
+[openamp.d] invoke transform: android/support/design/R$attr
+[openamp.d] invoke transform: android/support/design/R$bool
+[openamp.d] invoke transform: android/support/design/R$color
+[openamp.d] invoke transform: android/support/design/R$dimen
+[openamp.d] invoke transform: android/support/design/R$drawable
+[openamp.d] invoke transform: android/support/design/R$id
+[openamp.d] invoke transform: android/support/design/R$integer
+[openamp.d] invoke transform: android/support/design/R$layout
+[openamp.d] invoke transform: android/support/design/R$string
+[openamp.d] invoke transform: android/support/design/R$style
+[openamp.d] invoke transform: android/support/design/R$styleable
+[openamp.d] invoke transform: android/support/design/R
+[openamp.d] invoke transform: android/support/v7/appcompat/R$anim
+[openamp.d] invoke transform: android/support/v7/appcompat/R$attr
+[openamp.d] invoke transform: android/support/v7/appcompat/R$bool
+[openamp.d] invoke transform: android/support/v7/appcompat/R$color
+[openamp.d] invoke transform: android/support/v7/appcompat/R$dimen
+[openamp.d] invoke transform: android/support/v7/appcompat/R$drawable
+[openamp.d] invoke transform: android/support/v7/appcompat/R$id
+[openamp.d] invoke transform: android/support/v7/appcompat/R$integer
+[openamp.d] invoke transform: android/support/v7/appcompat/R$layout
+[openamp.d] invoke transform: android/support/v7/appcompat/R$string
+[openamp.d] invoke transform: android/support/v7/appcompat/R$style
+[openamp.d] invoke transform: android/support/v7/appcompat/R$styleable
+[openamp.d] invoke transform: android/support/v7/appcompat/R
+[openamp.d] invoke transform: com/github/sgwhp/openapm/monitor/R$string
+[openamp.d] invoke transform: com/github/sgwhp/openapm/monitor/R
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/BuildConfig
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/MainActivity
+[openamp.d] find exception java/lang/IndexOutOfBoundsException
+[openamp.d] instrument exception
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/MyApplication
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R$anim
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R$attr
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R$bool
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R$color
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R$dimen
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R$drawable
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R$id
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R$integer
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R$layout
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R$menu
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R$mipmap
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R$string
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R$style
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R$styleable
+[openamp.d] invoke transform: com/github/sgwhp/openapm/sample/R
