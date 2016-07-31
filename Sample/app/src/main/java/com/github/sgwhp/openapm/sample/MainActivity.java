@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity
         try{
             arr[0] = 0;
             arr[1] = 1;
+            System.out.println(arr[0]);
         } catch(IndexOutOfBoundsException e){
             System.out.println("oops");
         }
-        System.out.println(arr[0]);
     }
 
     @Override
