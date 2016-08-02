@@ -1,5 +1,6 @@
 package com.github.sgwhp.openapm.agent;
 
+import com.github.sgwhp.openapm.agent.util.ConsoleLog;
 import com.github.sgwhp.openapm.agent.util.FileLog;
 import com.github.sgwhp.openapm.agent.util.Log;
 import com.github.sgwhp.openapm.agent.util.StreamUtil;
@@ -37,9 +38,9 @@ public class TransformAgent {
         } catch (Exception e){
             error = true;
         }
-//        String logFile = params.get("logfile");
-//        Log log = logFile == null ? new ConsoleLog() : new FileLog(logFile);
-        Log log = new FileLog("log.txt");
+        String logFile = params.get("logfile");
+        Log log = logFile == null ? new ConsoleLog() : new FileLog(logFile);
+//        Log log = new FileLog("log.txt");
         if(error){
             log.e("Arguments parse error: " + args);
         }

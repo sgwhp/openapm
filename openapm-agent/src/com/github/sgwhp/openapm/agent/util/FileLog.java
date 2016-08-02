@@ -12,7 +12,7 @@ public class FileLog implements Log {
 
     public FileLog(String path){
         try {
-            writer = new PrintWriter(new FileOutputStream(path));
+            writer = new PrintWriter(new FileOutputStream(path, true));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }

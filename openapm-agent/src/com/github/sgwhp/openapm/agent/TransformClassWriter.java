@@ -14,24 +14,24 @@ public class TransformClassWriter extends ClassWriter {
     }
 
     @Override
-    protected String getCommonSuperClass(String s, String s1) {
-        Class localClass1;
-        Class localClass2;
+    protected String getCommonSuperClass(String type1, String type2) {
+        Class class1;
+        Class class2;
         try {
-            localClass1 = Class.forName(s.replace('/', '.'), false, classLoader);
-            localClass2 = Class.forName(s1.replace('/', '.'), false, classLoader);
-        } catch (Exception localException) {
-            throw new RuntimeException(localException.toString());
+            class1 = Class.forName(type1.replace('/', '.'), false, classLoader);
+            class2 = Class.forName(type2.replace('/', '.'), false, classLoader);
+        } catch (Exception e) {
+            throw new RuntimeException(e.toString());
         }
-        if (localClass1.isAssignableFrom(localClass2))
-            return s;
-        if (localClass2.isAssignableFrom(localClass1))
-            return s1;
-        if ((localClass1.isInterface()) || (localClass2.isInterface()))
+        if (class1.isAssignableFrom(class2))
+            return type1;
+        if (class2.isAssignableFrom(class1))
+            return type2;
+        if ((class1.isInterface()) || (class2.isInterface()))
             return "java/lang/Object";
         do
-            localClass1 = localClass1.getSuperclass();
-        while (!localClass1.isAssignableFrom(localClass2));
-        return localClass1.getName().replace('.', '/');
+            class1 = class1.getSuperclass();
+        while (!class1.isAssignableFrom(class2));
+        return class1.getName().replace('.', '/');
     }
 }
