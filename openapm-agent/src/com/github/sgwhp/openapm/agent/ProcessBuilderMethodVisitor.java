@@ -20,10 +20,13 @@ public class ProcessBuilderMethodVisitor extends MarkMethodVisitor {
     protected void onMethodEnter(){
         invocationBuilder.loadInvocationDispatcher()
                 .loadInvocationDispatcherKey(TransformAgent.genDispatcherKey("java/lang/ProcessBuilder", methodName))
-                .loadArray(new Runnable[] {() -> {
-                    loadThis();
-                    invokeVirtual(Type.getObjectType("java/lang/ProcessBuilder")
-                            , new Method("command", "()Ljava/util/List;"));
+                .loadArray(new Runnable[] {new Runnable() {
+                    @Override
+                    public void run() {
+                        loadThis();
+                        invokeVirtual(Type.getObjectType("java/lang/ProcessBuilder")
+                                , new Method("command", "()Ljava/util/List;"));
+                    }
                 }}).invokeDispatcher();
     }
 }

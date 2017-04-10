@@ -38,8 +38,13 @@ public class TransformConfig {
 
     private static HashSet<String> parseException(Map<String, String> properties, Log log){
         HashSet<String> result = new HashSet<>();
-        properties.entrySet().stream().filter(entry -> entry.getKey().startsWith("")).forEach(
-                entry -> result.add(entry.getKey().substring(EXCEPTION.length())));
+        for(String key : properties.keySet()){
+            if (key.startsWith(EXCEPTION)) {
+                result.add(key.substring(EXCEPTION.length()));
+            }
+        }
+//        properties.entrySet().stream().filter(entry -> entry.getKey().startsWith("")).forEach(
+//                entry -> result.add(entry.getKey().substring(EXCEPTION.length())));
         return result;
     }
 

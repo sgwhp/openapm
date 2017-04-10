@@ -62,11 +62,16 @@ public class InvocationBuilder {
         return this;
     }
 
-    public InvocationBuilder printToInfoLogFromBytecode(String paramString) {
+    public InvocationBuilder printToInfoLogFromBytecode(final String paramString) {
         loadInvocationDispatcher();
         generatorAdapter.visitLdcInsn("PRINT_TO_INFO_LOG");
         generatorAdapter.visitInsn(Opcodes.ACONST_NULL);
-        loadArray(new Runnable[]{() -> generatorAdapter.visitLdcInsn(paramString)});
+        loadArray(new Runnable[]{new Runnable() {
+            @Override
+            public void run() {
+                generatorAdapter.visitLdcInsn(paramString);
+            }
+        }});
         invokeDispatcher();
         return this;
     }
